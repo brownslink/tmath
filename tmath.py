@@ -1,4 +1,4 @@
-
+""" MATH FILE PARSER """
 from math import log, log10, pow, erfc, sqrt
 
 def log2( p):
