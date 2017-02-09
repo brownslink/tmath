@@ -1,0 +1,12 @@
+N0dB = -101 : noise floor : dBm
+B = 20e6 : channel bandwidth : MHz//1e6
+d = 1 : distance : m
+SNRdB = (20-(40+20*log10( d)))-N0dB : SNR : dB
+SNR = pow( 10, SNRdB/10) : SNR :
+BER = 1/2*erfc( sqrt( SNR)) : bit error rate :
+C1 = B*log2( 1+SNR) : Shannon (maximum channel) capacity at 1 m : Mbps//1e6
+d = 100 : distance : m
+SNRdB = (20-(40+20*log10( d)))-N0dB : SNR : dB
+SNR = pow( 10, SNRdB/10) : SNR :
+BER = 1/2*erfc( sqrt( SNR)) : bit error rate :
+C100 = B*log2( 1+SNR) : Shannon (maximum channel) capacity at 100 m : Mbps//1e6
